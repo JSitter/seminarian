@@ -1,4 +1,40 @@
+@import 'colors';
+@import 'breakpoints';
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    color: $offBlack;
+    background-color: $red;
+}
+
+header {
+    background-color: $midBrown;
+}
+
+@media (max-width: $tablet) {
+
+    header {
+        height: 300px;
+    }
+
+}
+
+@media (min-width: $tablet) {
+
+    header {
+        height: 500px;
+    }
+
+}
+
+@media (min-width: $desktop) {
+
+    header {
+        height: 700px;
+    }
+
 }
