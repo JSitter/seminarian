@@ -1,5 +1,15 @@
 @import 'colors';
 @import 'breakpoints';
+@import './font-awesome/fontawesome';
+@import './font-awesome/regular';
+@import './font-awesome/brands';
+@import './font-awesome/solid';
+// @import './font-awesome/core';
+// @import './font-awesome/animated';
+// @import './font-awesome/icons';
+// @import './font-awesome/variables';
+// @import './font-awesome/fixed-width';
+// @import './font-awesome/mixins';
 
 * {
     margin: 0px;
@@ -16,25 +26,19 @@ header {
 }
 
 @media (max-width: $tablet) {
-
     header {
         height: 300px;
     }
-
 }
 
 @media (min-width: $tablet) {
-
     header {
-        height: 500px;
+        height: 50vh;
     }
-
 }
 
 @media (min-width: $desktop) {
-
     header {
-        height: 700px;
+        height: 30vh;
     }
-
 }
