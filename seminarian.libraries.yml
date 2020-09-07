@@ -1,4 +1,4 @@
-seminarian-style:
+global-style:
   css:
     theme:
       css/base.css: {}
