@@ -3,8 +3,7 @@ description: Main theme for SAS Archive
 type: theme
 core: 8.x
 libraries:
- - Seminarian/global-css
- - Seminarian/global-js
+ - seminarian/seminarian-style
 
 stylesheets-remove:
  - core/themes/stable/css/views/views.module.css
@@ -30,3 +29,4 @@ stylesheets-remove:
  - core/themes/stable/css/system/components/align.module.css
  - core/themes/stable/css/system/components/ajax-progress.module.css
  - core/themes/stable/css/system/components/progress.module.css
+ 
