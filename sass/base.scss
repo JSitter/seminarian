@@ -1,5 +1,5 @@
 @import 'colors';
-@import 'breakpoints';
+@import 'media-queries';
 @import 'fonts';
 @import './font-awesome/fontawesome';
 @import './font-awesome/regular';
@@ -42,46 +42,14 @@ input[type=submit] {
     font-weight: 600;
 }
 
-@media (max-width: $mobile) {
-    header {
-        height: 200px;
-        background-position-y: center;
-    }
-}
-
-@media (min-width: $tablet) {
-    header {
-        height: 40vh;
-    }
-}
-
-@media (min-width: $desktop) {
-    header {
-        height: 50vh;
-        background-image: url(../assets/seminarycover80.jpg);
-    }
-}
-
-@media (min-width: $wideDesktop) {
-    header {
-        height: 50vh;
-        background-position-y: -50px;
-        background-image: url(../assets/seminarycover80.jpg);
-    }
-}
-
-@media (min-width: $ultraWideDesktop) {
-    header {
-        height: 50vh;
-        background-position-y: -110px;
-        background-image: url(../assets/seminarycoverfull.jpg);
-    }
-}
-
-@media (min-width: $ludicrousWideDesktop) {
-    header {
-        height: 50vh;
-        background-position-y: -620px;
-        background-image: url(../assets/seminarycoverfull.jpg);
-    }
+nav.main-menu {
+    width: 100%;
+    height: 55px;
+    border-top: 8px solid $teal;
+    background-color: $midBrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding: 5px 10px;
 }
