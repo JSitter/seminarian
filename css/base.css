@@ -1,3 +1,47 @@
+@media (max-width: 300px) {
+  header {
+    height: 200px;
+    background-position-y: center;
+  }
+}
+
+@media (min-width: 500px) {
+  header {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    height: 50vh;
+    background-image: url(../assets/seminarycover80.jpg);
+  }
+}
+
+@media (min-width: 1650px) {
+  header {
+    height: 50vh;
+    background-position-y: -50px;
+    background-image: url(../assets/seminarycover80.jpg);
+  }
+}
+
+@media (min-width: 2000px) {
+  header {
+    height: 50vh;
+    background-position-y: -110px;
+    background-image: url(../assets/seminarycoverfull.jpg);
+  }
+}
+
+@media (min-width: 2500px) {
+  header {
+    height: 50vh;
+    background-position-y: -620px;
+    background-image: url(../assets/seminarycoverfull.jpg);
+  }
+}
+
 @font-face {
   font-family: SiteHeading;
   src: url(../webfonts/Alice-Regular.ttf);
@@ -28,21 +72,21 @@ div#block-seminarian-branding > a {
   text-decoration: none;
 }
 
-div#block-seminarian-branding > a:visited {
+.white-links a:visited {
   color: #A4A4A4;
 }
 
-div#block-seminarian-branding > a:hover {
+.white-links a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-div#block-seminarian-branding > a:active {
+.white-links a:active {
   color: #fff;
   text-decoration: underline;
 }
 
-div#block-seminary-branding > a:focus {
+.white-links a:focus {
   color: #fff;
   text-decoration: underline;
 }
@@ -6204,47 +6248,23 @@ input[type=submit] {
   font-weight: 600;
 }
 
-@media (max-width: 300px) {
-  header {
-    height: 200px;
-    background-position-y: center;
-  }
-}
-
-@media (min-width: 500px) {
-  header {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 1000px) {
-  header {
-    height: 50vh;
-    background-image: url(../assets/seminarycover80.jpg);
-  }
-}
-
-@media (min-width: 1650px) {
-  header {
-    height: 50vh;
-    background-position-y: -50px;
-    background-image: url(../assets/seminarycover80.jpg);
-  }
-}
-
-@media (min-width: 2000px) {
-  header {
-    height: 50vh;
-    background-position-y: -110px;
-    background-image: url(../assets/seminarycoverfull.jpg);
-  }
-}
-
-@media (min-width: 2500px) {
-  header {
-    height: 50vh;
-    background-position-y: -620px;
-    background-image: url(../assets/seminarycoverfull.jpg);
-  }
+nav.main-menu {
+  width: 100%;
+  height: 55px;
+  border-top: 8px solid #188F9A;
+  background-color: #52361C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=base.css.map */
