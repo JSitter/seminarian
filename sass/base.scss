@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'breakpoints';
+@import 'fonts';
 @import './font-awesome/fontawesome';
 @import './font-awesome/regular';
 @import './font-awesome/brands';
@@ -18,27 +19,69 @@
 
 body {
     color: $offBlack;
-    background-color: $red;
+    background-color: $lightGrey;
 }
 
 header {
     background-color: $midBrown;
+    background-image: url(../assets/seminarycover50.jpg);
+    background-position-x: center;
+    background-size: cover;
+    min-height: 200px;
 }
 
-@media (max-width: $tablet) {
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    font-family: SiteSansSerif;
+}
+
+input[type=submit] {
+    font-family: SiteSansSerif;
+    font-weight: 600;
+}
+
+@media (max-width: $mobile) {
     header {
-        height: 300px;
+        height: 200px;
+        background-position-y: center;
     }
 }
 
 @media (min-width: $tablet) {
     header {
-        height: 50vh;
+        height: 40vh;
     }
 }
 
 @media (min-width: $desktop) {
     header {
-        height: 30vh;
+        height: 50vh;
+        background-image: url(../assets/seminarycover80.jpg);
+    }
+}
+
+@media (min-width: $wideDesktop) {
+    header {
+        height: 50vh;
+        background-position-y: -50px;
+        background-image: url(../assets/seminarycover80.jpg);
+    }
+}
+
+@media (min-width: $ultraWideDesktop) {
+    header {
+        height: 50vh;
+        background-position-y: -110px;
+        background-image: url(../assets/seminarycoverfull.jpg);
+    }
+}
+
+@media (min-width: $ludicrousWideDesktop) {
+    header {
+        height: 50vh;
+        background-position-y: -620px;
+        background-image: url(../assets/seminarycoverfull.jpg);
     }
 }
