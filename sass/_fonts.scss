@@ -1,0 +1,76 @@
+@font-face {
+    font-family: SiteHeading;
+    src: url(../webfonts/Alice-Regular.ttf);
+}
+
+@font-face {
+    font-family: SiteSerif;
+    src: url(../webfonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: SiteSansSerif;
+    src: url(../webfonts/Nunito-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: SiteHeading;
+}
+
+html {
+    font-family: SiteSerif;
+    font-size: 12pt;
+}
+
+div#block-seminarian-branding > a {
+    color: $offWhite;
+    padding: 0px 3px;
+    text-decoration: none; 
+ }
+
+ 
+div#block-seminarian-branding > a:visited {
+    color: $midGrey;
+}
+
+div#block-seminarian-branding > a:hover {
+    color: $white;
+    text-decoration: underline;
+
+}
+
+div#block-seminarian-branding > a:active {
+    color: $white;
+    text-decoration: underline;
+
+}
+
+div#block-seminary-branding > a:focus {
+    color: $white;
+    text-decoration: underline;
+}
+
+a {
+   color: $teal;
+   padding: 0px 3px;
+   text-decoration: none; 
+}
+
+a:visited {
+    color: $midBrown;
+}
+
+a:hover {
+    color: $lightTeal;
+    text-decoration: underline;
+}
+
+a:active {
+    color: $purple;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: $lightTeal;
+    text-decoration: underline;
+}
