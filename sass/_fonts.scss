@@ -29,23 +29,23 @@ div#block-seminarian-branding > a {
  }
 
  
-div#block-seminarian-branding > a:visited {
+.white-links a:visited {
     color: $midGrey;
 }
 
-div#block-seminarian-branding > a:hover {
+.white-links a:hover {
     color: $white;
     text-decoration: underline;
 
 }
 
-div#block-seminarian-branding > a:active {
+.white-links a:active {
     color: $white;
     text-decoration: underline;
 
 }
 
-div#block-seminary-branding > a:focus {
+.white-links a:focus {
     color: $white;
     text-decoration: underline;
 }
