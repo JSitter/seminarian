@@ -1,11 +1,16 @@
 <?php
-/* IMplements hook_preprocess */
-function seminarian_preprocess(&$variables, $hook) {
-    
-    if($hook == "menu") {
-        // kint($variables);
-        foreach ($variables['items'] as &$item) {
-            $item['title'] = $item['title'] . 'ie';
+function getProfileImage(){
+    if ($user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id())) {
+        if (!$user->user_picture->isEmpty()) {
+          $picture = $user->user_picture->view('large');
         }
-    }
+        else {
+          $picture = '<i class="fas fa-user"></i>';
+        }
+      }
+    return $picture;
+}
+
+function seminarian_preprocess(&$variables, $hook){
+    $variables["profile_picture"] = getProfileImage();
 }

@@ -34,14 +34,10 @@
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav class="main-menu white-links" role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
-  {% if not configuration.label_display %}
-    {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-  {% endif %}
+  <aside class="main-menu-user-bar">
+  {{profile_picture}}
   {{ user.displayname }}
-  dump username<br/>
-  <br />
-  end username
-  
+  </aside>
   {# Menu. #}
   {% block content %}
     {{ content }}
