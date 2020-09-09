@@ -1,0 +1,11 @@
+<?php
+/* IMplements hook_preprocess */
+function seminarian_preprocess(&$variables, $hook) {
+    
+    if($hook == "menu") {
+        // kint($variables);
+        foreach ($variables['items'] as &$item) {
+            $item['title'] = $item['title'] . 'ie';
+        }
+    }
+}
