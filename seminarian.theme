@@ -1,16 +1,16 @@
 <?php
-function getProfileImage(){
+function getProfileThumb(){
     if ($user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id())) {
         if (!$user->user_picture->isEmpty()) {
-          $picture = $user->user_picture->view('large');
+          $picture = $user->user_picture->view('small');
         }
         else {
-          $picture = '<i class="fas fa-user"></i>';
+          $picture = 0;
         }
       }
     return $picture;
 }
 
 function seminarian_preprocess(&$variables, $hook){
-    $variables["profile_picture"] = getProfileImage();
+    $variables["profile_picture"] = getProfileThumb();
 }
