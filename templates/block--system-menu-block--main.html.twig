@@ -36,18 +36,22 @@
   {# Label. If not displayed, we still provide it for screen readers. #}
   <aside class="main-menu-user-bar">
   {% if profile_picture %}
+    <div class="profile-image-positioner">
     {{profile_picture}}
+    </div>
   {% else %}
     <i class="fas fa-user-circle"></i>
   {% endif %}
   {% if user.isAuthenticated() %}
-    {{ user.displayname }}
+    <a href="/user/{{user.id}}">{{ user.displayname }}</a>
   {% else %}
     <a href="/user">Login</a>
   {% endif %}
   </aside>
   {# Menu. #}
+  <aside class="main-menu-link-block">
   {% block content %}
     {{ content }}
   {% endblock %}
+  </aside>
 </nav>
