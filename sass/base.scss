@@ -24,6 +24,10 @@ html, body {
 }
 
 body {
+    overflow: hidden;
+}
+
+body {
     color: $offBlack;
     background-color: $lightGrey;
     max-width: 100%;

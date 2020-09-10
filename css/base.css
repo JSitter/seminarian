@@ -6250,6 +6250,10 @@ html, body {
 }
 
 body {
+  overflow: hidden;
+}
+
+body {
   color: #252525;
   background-color: #E5E5E5;
   max-width: 100%;
