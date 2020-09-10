@@ -42,6 +42,27 @@
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .layout-container {
+  margin-top: 60px;
+}
+
+.admin-sticky + .layout-container {
+  margin-top: 73px;
+}
+
+.admin-sticky {
+  top: 51px !important;
+  position: fixed;
+  width: 100%;
+  z-index: 501;
+}
+
 @font-face {
   font-family: SiteHeading;
   src: url(../webfonts/Alice-Regular.ttf);
