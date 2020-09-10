@@ -6223,9 +6223,15 @@ readers do not read off random characters that represent icons */
   padding: 0px;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: #252525;
   background-color: #E5E5E5;
+  max-width: 100%;
 }
 
 header {
