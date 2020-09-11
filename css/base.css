@@ -6383,4 +6383,16 @@ nav.main-menu {
 .main-menu-link-block li {
   list-style-type: none;
 }
+
+main {
+  padding: 30px;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+article > h2::first-child {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=base.css.map */
