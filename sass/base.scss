@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'media-queries';
 @import 'sticky-menu';
+@import 'status-messages';
 @import 'fonts';
 @import './font-awesome/fontawesome';
 @import './font-awesome/regular';
@@ -31,6 +32,10 @@ body {
     color: $offBlack;
     background-color: $lightGrey;
     max-width: 100%;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 header {
