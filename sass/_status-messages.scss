@@ -1,0 +1,29 @@
+@import 'colors';
+
+div.drupal-status-messages > div {
+    border-radius: 5px;
+    border: 1px solid $darkGrey;
+    background-color: $midGrey;
+    margin: 15px;
+    padding: 30px;
+}
+
+div.drupal-status-messages li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+div.drupal-status-messages > div[aria-label="Error message"] {
+    border: 1px solid $red;
+    background-color: $lightRed;
+}
+
+div.drupal-status-messages > div[aria-label="Status message"] {
+    border: 1px solid $teal;
+    background-color: $lightTeal;
+}
+
+div.drupal-status-messages > div[aria-label="Warning message"] {
+    border: 1px solid $orange;
+    background-color: $lightOrange;
+}
