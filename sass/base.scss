@@ -7,6 +7,7 @@
 @import './font-awesome/regular';
 @import './font-awesome/brands';
 @import './font-awesome/solid';
+@import 'forms';
 // @import './font-awesome/core';
 // @import './font-awesome/animated';
 // @import './font-awesome/icons';
@@ -29,7 +30,6 @@ body {
 }
 
 body {
-    color: $offBlack;
     background-color: $lightGrey;
     max-width: 100%;
 }
@@ -44,18 +44,6 @@ header {
     background-position-x: center;
     background-size: cover;
     min-height: 200px;
-}
-
-input {
-    padding: 10px;
-    margin: 5px;
-    font-size: 1.5em;
-    font-family: SiteSansSerif;
-}
-
-input[type=submit] {
-    font-family: SiteSansSerif;
-    font-weight: 600;
 }
 
 nav.main-menu {
@@ -109,10 +97,43 @@ main {
     padding: 30px;
 }
 
-article {
-    margin-bottom: 50px;
+.links {
+    list-style-type: none;
 }
 
-article > h2::first-child {
+article {
+    border-radius: 5px;
+    padding: 100px 50px;
+    background-color: $offWhite;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article aside {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div.views-row div {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.content-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content-area div.imagearea {
+    grid-column: 2 / 3;
+}
+
+.content-area .links {
+    grid-column: 1 / 2;
+}
+
+.content-area .text_with_summaryarea {
+    grid-row: 1 / -1;
 }

@@ -14,3 +14,29 @@ function getProfileThumb(){
 function seminarian_preprocess(&$variables, $hook){
     $variables["profile_picture"] = getProfileThumb();
 }
+
+function seminarian_preprocess_node(&$variables) {
+  $variables['title_attributes']['class'] = 'node-title';
+  $variables['content_attributes']['class'] = 'content-area';
+}
+
+function seminarian_preprocess_field(&$variables) {
+  // print_r(array_keys($variables));
+  // print_r($variables['field_type']);
+  $variables['attributes']['class'] = $variables['field_type'] . "area";
+}
+// function seminarian_preprocess_image(&$variables) {
+//   if ($variables['style_name'] == 'IMAGE_STYLE_NAME') {
+//     kint($variables['width']);
+//     // Remove explicit width & height declaration.
+//     unset($variables['width'], $variables['height'], $variables['attributes']['width'], $variables['attributes']['height']);
+//   }
+// }
+
+// drupal_set_message('Hello world', 'custom');
+// drupal_set_message('Hello world', 'error');
+// drupal_set_message('Hello world', 'status');
+// drupal_set_message('Hello world', 'warning');
+
+// gettype($variables)
+// array_keys($variables)
