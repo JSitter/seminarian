@@ -1,0 +1,24 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <aside {{ author_attributes }}>
+    {# {{ author_picture }} #}
+      {% trans %}By {{ author_name }}<br/>
+      {{ date }}{% endtrans %}
+      {{ metadata }}
+    </aside>
+  {% endif %}
+
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
+
+</article>
