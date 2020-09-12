@@ -19,8 +19,8 @@ div.drupal-status-messages > div[aria-label="Error message"] {
 }
 
 div.drupal-status-messages > div[aria-label="Status message"] {
-    border: 1px solid $teal;
-    background-color: $lightTeal;
+    border: 1px solid $statusMessageBorder;
+    background-color: $statusMessageBody;
 }
 
 div.drupal-status-messages > div[aria-label="Warning message"] {
