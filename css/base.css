@@ -82,8 +82,8 @@ div.drupal-status-messages > div[aria-label="Error message"] {
 }
 
 div.drupal-status-messages > div[aria-label="Status message"] {
-  border: 1px solid #188F9A;
-  background-color: #1fbecc;
+  border: 1px solid #51c1ae;
+  background-color: #a5e4d9;
 }
 
 div.drupal-status-messages > div[aria-label="Warning message"] {
@@ -112,7 +112,16 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   font-family: SiteSerif;
-  font-size: 12pt;
+  font-size: 14pt;
+  color: #444;
+}
+
+p {
+  max-width: 600px;
+}
+
+.node-title {
+  margin: 20px;
 }
 
 div#block-seminarian-branding > a {
@@ -6267,6 +6276,23 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+form {
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.5em;
+  font-family: SiteSansSerif;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  font-family: SiteSansSerif;
+  font-weight: 600;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6282,7 +6308,6 @@ body {
 }
 
 body {
-  color: #252525;
   background-color: #E5E5E5;
   max-width: 100%;
 }
@@ -6297,18 +6322,6 @@ header {
   background-position-x: center;
   background-size: cover;
   min-height: 200px;
-}
-
-input {
-  padding: 10px;
-  margin: 5px;
-  font-size: 1.5em;
-  font-family: SiteSansSerif;
-}
-
-input[type=submit] {
-  font-family: SiteSansSerif;
-  font-weight: 600;
 }
 
 nav.main-menu {
@@ -6388,11 +6401,57 @@ main {
   padding: 30px;
 }
 
-article {
-  margin-bottom: 50px;
+.links {
+  list-style-type: none;
 }
 
-article > h2::first-child {
+article {
+  border-radius: 5px;
+  padding: 100px 50px;
+  background-color: #FCFCFC;
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article aside {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+div.views-row div {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.content-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.content-area div.imagearea {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.content-area .links {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.content-area .text_with_summaryarea {
+  grid-row: 1 / -1;
 }
 /*# sourceMappingURL=base.css.map */
