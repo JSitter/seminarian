@@ -14,14 +14,10 @@
   
   <main role="main">
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    <aside class="layout-sidebar-first" role="complementary">
+      {{ page.sidebar_first }}
+    </aside>
     {% endif %}
 
     {% if page.sidebar_second %}
@@ -29,6 +25,10 @@
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
     
   </main>
 
