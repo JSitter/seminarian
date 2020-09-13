@@ -6476,4 +6476,10 @@ ul.pager__items {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.search-block-form {
+  width: 100%;
+  background-color: #FCFCFC;
+  padding: 30px;
+}
 /*# sourceMappingURL=base.css.map */
