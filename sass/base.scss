@@ -123,7 +123,7 @@ div.views-row div {
 
 .content-area {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr minmax(400px, 1fr);
 }
 
 .content-area div.imagearea {
@@ -136,4 +136,19 @@ div.views-row div {
 
 .content-area .text_with_summaryarea {
     grid-row: 1 / -1;
+}
+
+ul.pager__items li {
+    list-style-type: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+ul.pager__items {
+    padding: 30px;
+    width: 100%;
+    background-color: $offWhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

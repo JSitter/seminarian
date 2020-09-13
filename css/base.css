@@ -6435,8 +6435,8 @@ div.views-row div {
 .content-area {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 2fr minmax(400px, 1fr);
+      grid-template-columns: 2fr minmax(400px, 1fr);
 }
 
 .content-area div.imagearea {
@@ -6453,5 +6453,27 @@ div.views-row div {
 
 .content-area .text_with_summaryarea {
   grid-row: 1 / -1;
+}
+
+ul.pager__items li {
+  list-style-type: none;
+  display: inline;
+  margin: 0px 20px;
+}
+
+ul.pager__items {
+  padding: 30px;
+  width: 100%;
+  background-color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=base.css.map */
