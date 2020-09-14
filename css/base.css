@@ -6482,4 +6482,49 @@ ul.pager__items {
   background-color: #FCFCFC;
   padding: 30px;
 }
+
+nav.breadcrumbs {
+  color: #188F9A;
+  padding: 20px 30px;
+}
+
+nav.breadcrumbs ol {
+  list-style-type: none;
+  display: inline;
+}
+
+ul.primary-tabs li {
+  list-style-type: none;
+  display: inline;
+  background-color: #FCFCFC;
+  border-left: 1px #444 solid;
+  border-top: 1px #444 solid;
+  border-right: 1px #444 solid;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  padding: 10px 20px;
+}
+
+.page-title {
+  background-color: #444;
+  color: #FCFCFC;
+  height: 90px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -30px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+a.is-active li:parent {
+  background-color: pink;
+}
 /*# sourceMappingURL=base.css.map */
