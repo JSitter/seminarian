@@ -95,7 +95,7 @@ nav.main-menu {
 }
 
 main {
-    padding: 30px;
+    padding: $site-padding;
 }
 
 .links {
@@ -104,12 +104,18 @@ main {
 
 article {
     border-radius: 5px;
-    padding: 100px 50px;
+    padding: 100px $site-padding;
     background-color: $offWhite;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+}
+
+.entity_referencearea {
+    max-width: 100%;
+    overflow-x: hidden;;
 }
 
 article aside {
@@ -146,7 +152,7 @@ ul.pager__items li {
 }
 
 ul.pager__items {
-    padding: 30px;
+    padding: $site-padding;
     width: 100%;
     background-color: $offWhite;
     display: flex;
@@ -155,9 +161,11 @@ ul.pager__items {
 }
 
 .search-block-form {
-    width: 100%;
+    max-width: 100%;
     background-color: $offWhite;
-    padding: 30px;
+    padding: $site-padding;
+    margin: $site-padding;
+    border-radius: $site-radius;
 }
 
 nav.breadcrumbs {
@@ -190,7 +198,17 @@ ul.primary-tabs li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -30px;
     border-top-right-radius: $site-radius;
     border-top-left-radius: $site-radius;
 }
+
+div#block-seminarian-content {
+    background-color: $offWhite;
+    padding: 30px;
+    border-radius: $site-radius;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

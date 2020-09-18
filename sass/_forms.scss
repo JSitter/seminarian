@@ -12,5 +12,35 @@ input {
 
 input[type=submit] {
     font-family: SiteSansSerif;
-    font-weight: 600;
+    font-weight: 500;
+    background-color: $lightGrey;
+    padding: 10px 20px;
+    border: 1px $teal solid;
+}
+
+input[type=button] {
+    font-family: SiteSansSerif;
+    font-weight: 500;
+    background-color: $lightGrey;
+    padding: 10px 20px;
+    border: 1px $midGrey solid;
+}
+
+.form-item {
+    margin: 30px 5px;
+}
+
+.form-required::after {
+    content: "*";
+    color: $red;
+    margin: 0px 5px;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.description {
+    color: $midGrey;
 }

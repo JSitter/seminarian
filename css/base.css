@@ -6290,7 +6290,37 @@ input {
 
 input[type=submit] {
   font-family: SiteSansSerif;
-  font-weight: 600;
+  font-weight: 500;
+  background-color: #E5E5E5;
+  padding: 10px 20px;
+  border: 1px #188F9A solid;
+}
+
+input[type=button] {
+  font-family: SiteSansSerif;
+  font-weight: 500;
+  background-color: #E5E5E5;
+  padding: 10px 20px;
+  border: 1px #A4A4A4 solid;
+}
+
+.form-item {
+  margin: 30px 5px;
+}
+
+.form-required::after {
+  content: "*";
+  color: #E71205;
+  margin: 0px 5px;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.description {
+  color: #A4A4A4;
 }
 
 * {
@@ -6407,7 +6437,7 @@ main {
 
 article {
   border-radius: 5px;
-  padding: 100px 50px;
+  padding: 100px 30px;
   background-color: #FCFCFC;
   margin-bottom: 50px;
   display: -webkit-box;
@@ -6420,6 +6450,12 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
+}
+
+.entity_referencearea {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 article aside {
@@ -6478,9 +6514,11 @@ ul.pager__items {
 }
 
 .search-block-form {
-  width: 100%;
+  max-width: 100%;
   background-color: #FCFCFC;
   padding: 30px;
+  margin: 30px;
+  border-radius: 7px;
 }
 
 nav.breadcrumbs {
@@ -6519,8 +6557,24 @@ ul.primary-tabs li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: -30px;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
+}
+
+div#block-seminarian-content {
+  background-color: #FCFCFC;
+  padding: 30px;
+  border-radius: 7px;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=base.css.map */
