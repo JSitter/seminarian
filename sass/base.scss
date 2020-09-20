@@ -212,3 +212,26 @@ div#block-seminarian-content {
     align-items: center;
 }
 
+#block-seminarian-tools {
+    margin: $site-padding;
+    display: flex;
+    list-style-type: none;
+    background-color: $midBrown;
+    padding: $site-padding;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+#block-seminarian-footer {
+    width: 100%;
+    background-color: $midBrown;
+    padding: $site-padding;
+    display: flex;
+    flex-direction: column;
+
+    li {
+        list-style-type: none;
+    }
+}

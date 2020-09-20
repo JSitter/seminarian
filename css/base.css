@@ -6577,4 +6577,35 @@ div#block-seminarian-content {
       -ms-flex-align: center;
           align-items: center;
 }
+
+#block-seminarian-tools {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  background-color: #52361C;
+  padding: 30px;
+}
+
+#block-seminarian-tools li {
+  list-style-type: none;
+}
+
+#block-seminarian-footer {
+  width: 100%;
+  background-color: #52361C;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#block-seminarian-footer li {
+  list-style-type: none;
+}
 /*# sourceMappingURL=base.css.map */
