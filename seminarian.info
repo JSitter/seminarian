@@ -1,0 +1,10 @@
+name = Seminarian
+description = Main theme for SAS Archive.
+type = theme
+backdrop = 1.x
+
+stylesheets[all][] = css/base.css
+
+scripts[] = js/sticky-menu.js
+
+regions[content] = Content
