@@ -7,4 +7,4 @@ stylesheets[all][] = css/base.css
 
 scripts[] = js/sticky-menu.js
 
-regions[content] = Content
+settings[front_end_url] = localhost:3000
